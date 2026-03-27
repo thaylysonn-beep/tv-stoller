@@ -1,32 +1,9 @@
 <html>
 <body style="margin:0; background:black;">
 
-<video id="videoPlayer" autoplay muted playsinline 
-style="width:100vw; height:100vh; object-fit:cover;">
+<video autoplay muted loop playsinline style="width:100vw; height:100vh;">
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 </video>
-
-<script>
-const videos = [
-  "https://agcompany.sharepoint.com/sites/OperationalPeopleDevelopment/Shared%20Documents/General/Operational%20People%20Development/09.%20Comunica%C3%A7%C3%A3o%20Interna/8.%20TV/1.mp4?download=1",
-  "https://agcompany.sharepoint.com/sites/OperationalPeopleDevelopment/Shared%20Documents/General/Operational%20People%20Development/09.%20Comunica%C3%A7%C3%A3o%20Interna/8.%20TV/5.mp4?download=1"
-];
-
-let index = 0;
-const player = document.getElementById("videoPlayer");
-
-function playVideo() {
-  player.src = videos[index];
-  player.load();
-  player.play();
-}
-
-player.addEventListener("ended", function() {
-  index = (index + 1) % videos.length;
-  playVideo();
-});
-
-playVideo();
-</script>
 
 </body>
 </html>
