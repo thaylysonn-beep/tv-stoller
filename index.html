@@ -1,19 +1,32 @@
 <html>
-<head>
+<body style="margin:0; background:black;">
+
+<video id="videoPlayer" autoplay muted playsinline 
+style="width:100vw; height:100vh; object-fit:cover;">
+</video>
+
 <script>
-function carregar() {
-  window.location.href = "https://www.canva.com/design/DAHEIpqOX2Y/8RhToFUoH32xq_4Sz08h7Q/view?utm_content=DAHEIpqOX2Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h80684c1c99";
+const videos = [
+  "https://agcompany.sharepoint.com/sites/OperationalPeopleDevelopment/Shared%20Documents/General/Operational%20People%20Development/09.%20Comunica%C3%A7%C3%A3o%20Interna/8.%20TV/1.mp4?download=1",
+  "https://agcompany.sharepoint.com/sites/OperationalPeopleDevelopment/Shared%20Documents/General/Operational%20People%20Development/09.%20Comunica%C3%A7%C3%A3o%20Interna/8.%20TV/5.mp4?download=1"
+];
+
+let index = 0;
+const player = document.getElementById("videoPlayer");
+
+function playVideo() {
+  player.src = videos[index];
+  player.load();
+  player.play();
 }
 
-setTimeout(carregar, 1000);
+player.addEventListener("ended", function() {
+  index = (index + 1) % videos.length;
+  playVideo();
+});
 
-// força “loop” recarregando tudo
-setInterval(function(){
-  window.location.href = "https://www.canva.com/design/DAHEIpqOX2Y/8RhToFUoH32xq_4Sz08h7Q/view?utm_content=DAHEIpqOX2Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h80684c1c99";
-}, 120000); // 2 minutos
+playVideo();
 </script>
-</head>
-<body>
-Carregando...
+
 </body>
 </html>
