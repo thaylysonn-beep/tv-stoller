@@ -3,28 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>TV Corporativa</title>
+
+  <!-- Evita cache -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
   <style>
     html, body {
+      width: 100%;
+      height: 100%;
       margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
       background: black;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: white;
     }
   </style>
 </head>
+
 <body>
-  <iframe
-    src="https://www.canva.com/design/DAHEIpqOX2Y/present?autoplay=1&loop=1"
-    allow="autoplay"
-    allowfullscreen>
-  </iframe>
+  <div>Carregando comunicados institucionais...</div>
+
+  <script>
+    const CANVA_PRESENTATION =
+      "https://www.canva.com/design/DAHEIpqOX2Y/view?present";
+
+    setTimeout(() => {
+      window.location.replace(CANVA_PRESENTATION);
+    }, 1200);
+  </script>
 </body>
 </html>
 ``
