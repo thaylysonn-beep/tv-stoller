@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        http-equiv="Cache-Control"
+        content="no-cache, no-store, must-revalidate"
+    >
+
+    <meta
+        http-equiv="Pragma"
+        content="no-cache"
+    >
+
+    <meta
+        http-equiv="Expires"
+        content="0"
+    >
+
+    <title>TV Corporativa</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main id="tvApp">
+
+        <div id="playerContainer">
+
+            <!-- =========================================
+                 PLAYER DE VÍDEO
+            ========================================== -->
+
+            <video
+                id="videoPlayer"
+                autoplay
+                muted
+                playsinline
+                webkit-playsinline
+                preload="auto"
+                disablePictureInPicture
+            ></video>
+
+
+            <!-- =========================================
+                 PLAYER DE IMAGEM
+            ========================================== -->
+
+            <img
+                id="imagePlayer"
+                alt=""
+            >
+
+
+            <!-- =========================================
+                 PLAYER WEB
+            ========================================== -->
+
+            <iframe
+                id="webPlayer"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+
+
+            <!-- =========================================
+                 CARREGAMENTO
+            ========================================== -->
+
+            <div id="loading">
+
+                <div class="loadingBox">
+
+                    <div class="loadingIcon">
+                        📺
+                    </div>
+
+                    <div id="loadingMessage">
+                        Carregando programação...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =============================================
+             IDENTIFICAÇÃO
+        ============================================== -->
+
+        <div id="tvInfo">
+            TV Corporativa
+        </div>
+
+    </main>
+
+
+    <!-- =============================================
+         JAVASCRIPT
+    ============================================== -->
+
+    <script src="js/player.js"></script>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
