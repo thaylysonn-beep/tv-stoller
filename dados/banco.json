@@ -1,0 +1,46 @@
+{
+    "versao": 1,
+
+    "atualizadoEm": "2026-09-18",
+
+    "programacao": [
+
+        {
+            "id": 1,
+            "nome": "Vídeo Institucional",
+            "tipo": "video",
+            "arquivo": "midias/videos/video1.mp4",
+            "duracao": 0,
+            "ativo": true
+        },
+
+        {
+            "id": 2,
+            "nome": "Comunicado RH",
+            "tipo": "imagem",
+            "arquivo": "midias/comunicados/comunicado1.jpg",
+            "duracao": 30,
+            "ativo": true
+        },
+
+        {
+            "id": 3,
+            "nome": "Indicadores de Produção",
+            "tipo": "powerbi",
+            "url": "",
+            "duracao": 120,
+            "ativo": true
+        },
+
+        {
+            "id": 4,
+            "nome": "Vídeo Institucional 2",
+            "tipo": "video",
+            "arquivo": "midias/videos/video2.mp4",
+            "duracao": 0,
+            "ativo": true
+        }
+
+    ]
+
+}
